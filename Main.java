@@ -1,3 +1,8 @@
+import java.util.List;
+
+import gen.genetic.Genetic;
+import gen.treasure.Treasure;
+
 public class Main {
 
     public static void main(String[] args) {

@@ -1,17 +1,31 @@
 package gen.genetic;
 
-import java.util.List;
+import java.util.function.Function;
 
 public class Population {
 
-    List<Integer> population;
+    int[][] population;
 
-    public Population(List<Integer> population) {
+    public Population(int[][] population) {
         this.population = population;
     }
 
 
-    protected List<Integer> getPopulation (List<Integer> population) {
-        return population;
+    protected int[][] Population () {
+        return newPopulation.apply(population);
     }
+
+    Function<int[][], int[][]> newPopulation = (p) -> {
+        // create a brand new population
+
+
+		return p;
+    };
+
+    Function<int[][], int[][]> editPopulation = (p) -> {
+        // edit population
+
+
+		return p;
+    };
 }
